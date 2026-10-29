@@ -1,7 +1,0 @@
-# Windows Failed Login Detection Using Splunk
-
-SOC Portfolio Project 1
-
-This project demonstrates the detection and investigation
-of repeated Windows authentication failures using
-Splunk Enterprise and Windows Security Event ID 4625.
