@@ -1,1 +1,9 @@
 
+index=main
+source="WinEventLog:Security"
+EventCode=4625
+| bin _time span=30m
+| stats count as FailedAttempts by _time host
+| where FailedAttempts>=3
+| sort - _time
+  
