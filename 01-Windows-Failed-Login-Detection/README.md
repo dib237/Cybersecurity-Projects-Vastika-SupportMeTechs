@@ -1,4 +1,4 @@
-# Windows Failed Login Detection & SOC Investigation Using Splunk
+# Windows Failed Login Detection & SOC Investigation Using Splunk.
 
 **SOC Portfolio Project 01 | Detection Engineering | Security Monitoring | Incident Investigation**
 
