@@ -30,11 +30,19 @@ Developed and tested an SPL detection rule to identify repeated Windows authenti
 
 [View Project 01](01-Windows-Failed-Login-Detection/README.md)
 
-### Project 02 — Active Directory Privileged Group Change Detection
+### Project 02 — Active Directory Investigation
 
-**Status: Planned**
+**Status: Completed — manual lab investigation**
 
-Monitoring changes to privileged Active Directory group memberships using Windows Security logs and Splunk.
+Created a test AD user, temporarily added it to Domain Admins, and investigated Windows Security events using Event Viewer.
+
+**Highlights:**
+- Documented user creation (4720), privileged group addition (4728), and removal (4729).
+- Built an evidence-based timeline with three original screenshots.
+- Distinguished operator-confirmed actor details from directly visible evidence.
+- Mapped the lab behavior to MITRE ATT&CK T1136.002 and T1098.007 without claiming malicious activity.
+
+[View Project 02](02-Active-Directory-Investigation/README.md)
 
 ### Project 03 — Suspicious PowerShell Activity Detection
 
