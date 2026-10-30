@@ -16,7 +16,7 @@ Windows Security Event ID 4625 records failed logon attempts and can provide use
 
 The Splunk detection monitors Windows Security Event ID 4625 and identifies hosts with three or more failed authentication events within fixed 30-minute intervals.
 
-During testing, the highest observed count was 12 failed authentication events within one interval.
+The selected lab bucket contained 12 failed authentication events within one fixed 30-minute interval. Screenshot 05 also shows higher counts in other buckets, including 262; 12 is not the maximum across the displayed results.
 
 ## 3. Why This Maps to T1110
 

@@ -13,7 +13,7 @@ This investigation focused on identifying repeated Windows authentication failur
 
 Windows Security logs were collected from a Windows 11 virtual machine through Splunk Universal Forwarder and analyzed using Search Processing Language (SPL).
 
-The final detection query identified a maximum of **12 failed authentication events within a fixed 30-minute interval on a single host**.
+The final detection query identified **12 failed authentication events in the selected lab bucket, a fixed 30-minute interval on a single host**.
 
 The investigation demonstrated the ability to identify authentication anomalies that may warrant further SOC analysis.
 
@@ -29,7 +29,7 @@ The detection logic grouped events by host and 30-minute time intervals, flaggin
 
 - Windows Security logs were successfully ingested into Splunk.
 - Repeated Event ID 4625 records were identified.
-- The maximum observed failed authentication count was 12 within a 30-minute interval.
+- The selected lab bucket contained 12 failed authentication events; screenshot 05 also shows higher counts in other buckets, including 262. The value 12 is not the maximum across the displayed results.
 - Some events identified `WINDOW11$` as the subject computer account, while the failed target account was not identified.
 - An inspected event showed loopback source address `127.0.0.1` and process `svchost.exe`.
 - A separate controlled login test generated failed authentication activity associated with the lab account `dibsh`.

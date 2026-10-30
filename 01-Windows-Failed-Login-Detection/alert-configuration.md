@@ -46,7 +46,7 @@ EventCode=4625
 | sort - _time
 ```
 
-The final rule successfully returned matching results, including a maximum observed count of 12 failed authentication events in one 30-minute interval.
+The final rule successfully returned matching results, including 12 failed authentication events in the selected lab bucket, a fixed 30-minute interval. Screenshot 05 also shows higher counts in other buckets, including 262; 12 is not the maximum across the displayed results.
 
 **Important:** The final query was validated through Splunk search. The previously triggered scheduled alert used the original configuration; the final rule has not been verified as deployed in that alert.
 

@@ -8,7 +8,7 @@ This project demonstrates the collection, detection, and investigation of repeat
 
 I built a Windows 11 virtual lab, configured Splunk Universal Forwarder to transmit Windows Security logs to Splunk Enterprise, developed an SPL detection rule, validated alert functionality, and investigated authentication events.
 
-The final detection identified up to **12 failed authentication events on a single host within a fixed 30-minute interval**.
+The final detection identified **12 failed authentication events on a single host in the selected lab bucket, a fixed 30-minute interval**.
 
 ## Lab Architecture
 
@@ -50,7 +50,7 @@ EventCode=4625
 
 **Detection threshold:** 3 or more failed authentication events per host per 30-minute bucket.
 
-**Maximum observed:** 12 events in one interval.
+**Selected lab bucket:** 12 events for host `window11` in the bucket beginning `2026-10-27 16:00:00`, as displayed in screenshot 05. This is not the maximum across the displayed results: the All time search also shows a bucket with 262 events. Results are sorted by time, not event count.
 
 The query is also available in [detection.spl](detection.spl).
 

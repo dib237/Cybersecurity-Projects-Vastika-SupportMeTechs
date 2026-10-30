@@ -23,7 +23,7 @@ Developed and tested an SPL detection rule to identify repeated Windows authenti
 
 **Highlights:**
 - Configured Windows Security log forwarding to Splunk Enterprise.
-- Detected up to 12 failed authentication events within a 30-minute interval.
+- Detected 12 failed authentication events in the selected lab bucket on one host within a fixed 30-minute interval.
 - Successfully tested scheduled alerting with an earlier detection rule.
 - Investigated authentication event details and documented findings.
 - Mapped the detection use case to MITRE ATT&CK T1110.
