@@ -44,11 +44,20 @@ Created a test AD user, temporarily added it to Domain Admins, and investigated 
 
 [View Project 02](02-Active-Directory-Investigation/README.md)
 
-### Project 03 — Suspicious PowerShell Activity Detection
+### Project 03 — PowerShell Process Investigation Using Splunk
 
-**Status: Planned**
+**Status: Completed — controlled execution and manual investigation**
 
-Investigating suspicious PowerShell execution through Windows event logs and security monitoring.
+Captured a benign PowerShell marker command in Windows Security event 4688 and investigated it in Splunk.
+
+**Highlights:**
+- Enabled process creation auditing and command-line collection in the lab.
+- Verified the cmd.exe to powershell.exe process chain and marker command.
+- Distinguished the test process from Splunk's PowerShell helper.
+- Published a sanitized evidence transcript, report, validation search, and MITRE T1059.001 mapping.
+- Documented that a marker lookup does not establish malicious activity or validate a general behavioral detector.
+
+[View Project 03](03-PowerShell-Investigation/README.md)
 
 ## Portfolio Objective
 

@@ -1,0 +1,1 @@
+index=main source="WinEventLog:Security" EventCode=4688 "soc-p3-controlled-test"
